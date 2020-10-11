@@ -21,3 +21,8 @@ func main() {
 
 // use gofmt to format the file
 // gofmt -w hello-world.go
+
+// if we set directory structure like      src -> pakage-name
+// then we use `go install` within the package-name folder
+
+// the go executable will be available in go bin path
