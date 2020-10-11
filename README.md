@@ -25,8 +25,6 @@ No semicolon needed
 
 Starting braces on the same line
 
-
-
 ## OOP
 
 Go can implement OOP concept 
@@ -36,5 +34,35 @@ Go can implement OOP concept
  
  no overloading, overriding 
  
+ ## Mac Installation
  
+ ```
+ brew update && brew install golang 
+ ```
+
+```
+mkdir -p $HOME/go/{bin,src,pkg}
+```
  
+ This created folders `bin` and `src`
+
+add this to your `.zshrc`
+
+```
+export GOPATH=$HOME/go
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+```
+ 
+reload settings with 
+
+```
+source $HOME/.bashrc
+```
+
+then create projects under 
+
+```  
+~/go/src
+```
+
