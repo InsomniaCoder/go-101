@@ -66,3 +66,6 @@ then create projects under
 ~/go/src
 ```
 
+
+Whenever a Go program encounters an import statement, it looks for the package in the Go’s standard library ($GOROOT/src). If the package is not available there, then Go refers to the system's environment variable GOPATH which is the path to Go workspace directory and looks for packages in $GOPATH/src directory
+
